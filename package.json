@@ -1,20 +1,32 @@
 {
   "name": "learn-next",
+  "description": "Simple NextJS App With Custom Express Server For API and Simple Authentication Using Sessions",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "nodemon server/server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "node server/server.js",
     "lint": "next lint"
   },
   "dependencies": {
+    "connect-mongo": "^4.4.1",
+    "cookie-parser": "^1.4.5",
+    "date-fns": "^2.23.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "gray-matter": "^4.0.3",
+    "mongoose": "^5.13.3",
     "next": "11.0.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1"
   },
   "devDependencies": {
     "eslint": "7.31.0",
-    "eslint-config-next": "11.0.1"
+    "eslint-config-next": "11.0.1",
+    "nodemon": "^2.0.12"
   }
 }
